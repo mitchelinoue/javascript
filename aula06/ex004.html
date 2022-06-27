@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Qual é o seu nome?")
+        document.write(`Olá, ${nome} seu nome tem ${nome.length} letras.<br>`) 
+            /*document.write escreve na página
+            <br> é HTML e quebra a linha (break row) */
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`)
+        document.write(`Seu nome em letras minúscula é ${nome.toLowerCase()}.<br>`)
+
+        var n1 = window.prompt("Qual é o valor que gostaria de receber como salário?")
+        document.write(Number(n1).toLocaleString('pt-BR',{style:'currency',currency:'BRL'})) //Number(n1) transforma em number a string que veio do prompt
+            // .toLocaleString('pt-BR' , {style:'currency' , currency:'BRL'}) é usado para colocar o número com o formato do país que se refere
+        
+    </script>
+</body>
+</html>

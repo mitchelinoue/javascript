@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(19, 110, 72);
+            color: white;
+            font: normal 17pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div name="msg">Clique em mim</div>
+
+    <script>
+       
+        var corpo = window.document.body //Aqui estou criando uma var puxando todo body do documento
+        var p1 = window.document.getElementsByTagName('p')[1] //Aqui a var p1 está puxando pela tag em ordem de aparição
+        p1.style.color = 'blue' //Aqui está mudando o estilo da var p1, que é o 1º paragrafo do body
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        window.document.write(p1.innerHTML)
+        corpo.style.background = 'black'
+        
+
+        var d = window.document.getElementsByName("msg")[0]
+        d.innerText = 'Olá!'
+    
+        
+    </script>
+
+</body>
+</html>
