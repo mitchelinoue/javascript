@@ -24,14 +24,17 @@
 
     <script>
         var a = window.document.getElementById('area')
+
         a.addEventListener('click' , clicar) //addEventListener cria eventos que podem acontecer, como clicar
+
         a.addEventListener('mouseenter' , entrar)
+
         a.addEventListener('mouseout' , sair)
 
         function clicar() {
             a.innerText = 'Clicou!' //innerText altera o texto do elemento
             a.style.background = 'red' //.style.background altera a cor do fundo
-            a.style.font = 'normal 10pt Arial' // altera o tamanho da fonte do texto
+            a.style.font = 'normal 25pt Arial' // altera o tamanho da fonte do texto
         }
         function entrar() {
             a.innerText = 'Entrou!'

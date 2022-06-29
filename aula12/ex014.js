@@ -1,7 +1,7 @@
 var agora = new Date()
 var diaSem = agora.getDay()
 
-diaSem = 17
+diaSem = 5 //Está forçando para colocar o dia, tente apagar essa linha
 console.log(diaSem)
 
 /*
